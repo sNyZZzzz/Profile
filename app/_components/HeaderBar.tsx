@@ -21,7 +21,7 @@ export default function HeaderBar() {
         <span className="font-bold text-xl md:text-4xl">
           CHRISTIAAN MYBURGH
         </span>
-        <div className="flex items-center text-sm md:text-lg text-white">
+        <div className="flex items-center text-sm md:text-lg text-white pl-1">
           <span>Engineer</span>
           <Dot className="w-5 h-5 md:w-8 md:h-8 " />
           <span>Product Owner</span>
