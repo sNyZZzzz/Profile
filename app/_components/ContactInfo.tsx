@@ -10,11 +10,11 @@ export default function ContactInfo() {
           className="flex gap-2 items-center"
           href="mailto: christiaanmyburgh@gmail.com"
         >
-          <Mail className="md:h-5 md:w-5 h-4 w-4 text-muted-foreground" />{" "}
+          <Mail className="md:h-5 md:w-5 h-4 w-4 " />{" "}
           <span>christiaanmyburgh@gmail.com</span>
         </a>
         <a className="flex gap-2 items-center" href="tel:+27720228765">
-          <Smartphone className="md:h-5 md:w-5 h-4 w-4 text-muted-foreground" />{" "}
+          <Smartphone className="md:h-5 md:w-5 h-4 w-4 " />{" "}
           <span>+27 72 022 8765</span>
         </a>
         <a
@@ -22,7 +22,7 @@ export default function ContactInfo() {
           href="https://maps.app.goo.gl/RwdYWYyVLLiETtpM7"
           target="_blank"
         >
-          <MapPin className="md:h-5 md:w-5 h-4 w-4 text-muted-foreground" />{" "}
+          <MapPin className="md:h-5 md:w-5 h-4 w-4 " />{" "}
           <span>Melrose, Johannesburg</span>
         </a>
         <a
@@ -30,7 +30,7 @@ export default function ContactInfo() {
           href="https://www.christiaanmyburgh.com"
           target="_blank"
         >
-          <Globe className="md:h-5 md:w-5 h-4 w-4 text-muted-foreground" />{" "}
+          <Globe className="md:h-5 md:w-5 h-4 w-4 " />{" "}
           <span>christiaanmyburgh.com</span>
         </a>
       </ul>

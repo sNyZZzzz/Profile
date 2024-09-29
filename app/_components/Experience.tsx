@@ -19,7 +19,7 @@ export default function Experience() {
       <ExperieceItem
         // company="WTax (VATIT)"
         jobTitle="Product Owner (Finance)"
-        startDate="Jun 2022"
+        startDate="Jun 2023"
         endDate="Aug 2023"
         responsibilities={[
           "Agile project management",
@@ -58,20 +58,20 @@ export function ExperieceItem({
   responsibilities,
 }: ExperienceTypeProps) {
   return (
-    <div className="flex flex-col gap-2 pb-4">
-      <div className="flex gap-1 items-center">
+    <div className="flex flex-col gap-2 pb-2">
+      <div className="flex gap-1 items-start flex-col">
         {company && (
           <>
-            <span className="font-bold text-lg">{company}</span>
-            <ChevronRight className="h-4 w-4" />
+            <span className="font-extrabold text-lg">{company}</span>
+            {/* <ChevronRight className="h-4 w-4" /> */}
           </>
         )}
-        <span className="text-lg font-semibold">{jobTitle}</span>
+        <span className="text-lg font-bold">{jobTitle}</span>
       </div>
-      <div className="italic -mt-2">
+      <div className="italic -mt-2 text-sm">
         {startDate} - {endDate}
       </div>
-      <span className="font-light">Key responsibilities:</span>
+      <span className="">Key responsibilities:</span>
       {responsibilities && (
         <ul className="list-disc pl-4 -mt-1">
           {responsibilities.map((r) => (

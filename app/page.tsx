@@ -3,6 +3,8 @@ import HeaderBar from "./_components/HeaderBar";
 import ContactInfo from "./_components/ContactInfo";
 import AboutMe from "./_components/AboutMe";
 import Experience from "./_components/Experience";
+import Education from "./_components/Education";
+import Projects from "./_components/Projects";
 
 export default function Home() {
   return (
@@ -11,12 +13,14 @@ export default function Home() {
       {/* <ModeToggle /> */}
       {/* Section 1 */}
       <div className="md:grid md:grid-cols-5 md:gap-5 h-full px-5">
-        <div className="md:col-span-2 mt-8 md:mt-24">
+        <div className="flex flex-col md:col-span-2 mt-8 md:mt-24 gap-6">
+          <AboutMe />
+          <Education />
           <ContactInfo />
         </div>
-        <div className="flex flex-col md:col-span-3 mt-8 gap-10">
-          <AboutMe />
+        <div className="flex flex-col md:col-span-3 mt-6 gap-6">
           <Experience />
+          <Projects />
         </div>
       </div>
     </div>

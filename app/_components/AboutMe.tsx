@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <div>
       <SectionHeader heading="About Me" />
-      <p className="text-balance md:text-justify">
+      <p className="text-balance">
         Computer engineer with a passion for building solutions that actually
         make a difference. With experience in Machine Learning and product
         development, I&apos;ve worked on projects ranging from designing and
