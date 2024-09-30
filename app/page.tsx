@@ -12,13 +12,17 @@ export default function Home() {
       <HeaderBar />
       {/* <ModeToggle /> */}
       {/* Section 1 */}
+      <div className="w-full flex justify-end">
+        <ModeToggle />
+      </div>
+
       <div className="md:grid md:grid-cols-5 md:gap-5 h-full px-5">
-        <div className="flex flex-col md:col-span-2 mt-8 md:mt-24 gap-6">
+        <div className="flex flex-col md:col-span-2 md:mt-12 gap-6">
           <AboutMe />
           <Education />
           <ContactInfo />
         </div>
-        <div className="flex flex-col md:col-span-3 mt-6 gap-6">
+        <div className="flex flex-col md:col-span-3 mt-6 md:mt-0 gap-6">
           <Experience />
           <Projects />
         </div>

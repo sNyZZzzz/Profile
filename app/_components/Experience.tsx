@@ -1,4 +1,3 @@
-import { ChevronRight } from "lucide-react";
 import SectionHeader from "./SectionHeader";
 
 export default function Experience() {
@@ -7,6 +6,7 @@ export default function Experience() {
       <SectionHeader heading="Professional Experience" />
       <ExperieceItem
         company="WTax (VATIT)"
+        companyLink="https://wtax.co/"
         jobTitle="Data Engineer"
         startDate="Aug 2022"
         endDate="Jun 2023"
@@ -44,6 +44,7 @@ export default function Experience() {
 
 type ExperienceTypeProps = {
   company?: string;
+  companyLink?: string;
   jobTitle: string;
   startDate: string | null;
   endDate: string | null;
@@ -52,6 +53,7 @@ type ExperienceTypeProps = {
 
 export function ExperieceItem({
   company,
+  companyLink,
   jobTitle,
   startDate,
   endDate,
@@ -62,8 +64,13 @@ export function ExperieceItem({
       <div className="flex gap-1 items-start flex-col">
         {company && (
           <>
-            <span className="font-extrabold text-lg">{company}</span>
-            {/* <ChevronRight className="h-4 w-4" /> */}
+            <a
+              className="font-extrabold text-lg w-full bg-muted rounded-md text-center"
+              href={companyLink}
+              target="_blank"
+            >
+              {company}
+            </a>
           </>
         )}
         <span className="text-lg font-bold">{jobTitle}</span>

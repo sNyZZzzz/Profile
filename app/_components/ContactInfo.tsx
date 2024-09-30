@@ -27,11 +27,10 @@ export default function ContactInfo() {
         </a>
         <a
           className="flex gap-2 items-center"
-          href="https://www.christiaanmyburgh.com"
+          href="https://www.cmyburgh.com"
           target="_blank"
         >
-          <Globe className="md:h-5 md:w-5 h-4 w-4 " />{" "}
-          <span>christiaanmyburgh.com</span>
+          <Globe className="md:h-5 md:w-5 h-4 w-4 " /> <span>cmyburgh.com</span>
         </a>
       </ul>
     </div>
