@@ -1,7 +1,6 @@
 import { Dot } from "lucide-react";
 import Image from "next/image";
-import profilePicture from "/Profile.jpg";
-import { ModeToggle } from "@/components/theme-switch";
+import profilePicture from "@/public/Profile.jpg";
 
 export default function HeaderBar() {
   return (
