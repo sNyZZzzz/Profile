@@ -44,7 +44,7 @@ export function ProjectCard({
     <a className="flex flex-col gap-1 pb-5" href={titleRef} target="_blank">
       <span className="text-lg font-bold -mb-2">{title}</span>
       <span>{description}</span>
-      <div className="flex gap-2">
+      <div className="flex flex-wrap gap-2 ">
         {techStack &&
           techStack.map((tech) => (
             <div
