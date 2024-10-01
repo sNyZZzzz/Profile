@@ -35,7 +35,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="bg-background w-full h-screen max-w-[793px] max-h-[1122px] ">
+          <div className="bg-background w-full h-screen max-w-[793px] md:max-w-[795px] md:max-h-[800px] ">
             {children}
           </div>
         </ThemeProvider>
