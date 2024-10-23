@@ -6,7 +6,7 @@ export default function Experience() {
       <SectionHeader heading="Professional Experience" />
 
       <ExperieceItem
-        // company="WTax (VATIT)"
+        company="WTax (VATIT)"
         jobTitle="Product Owner (Finance, Claims, Leads, Bots)"
         startDate="Aug 2023"
         endDate="Present"
@@ -28,7 +28,7 @@ export default function Experience() {
       />
 
       <ExperieceItem
-        company="WTax (VATIT)"
+        //company="WTax (VATIT)"
         companyLink="https://wtax.co/"
         jobTitle="Data Engineer"
         startDate="Aug 2022"
