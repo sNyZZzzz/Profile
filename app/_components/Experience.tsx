@@ -4,18 +4,17 @@ export default function Experience() {
   return (
     <div>
       <SectionHeader heading="Professional Experience" />
+
       <ExperieceItem
-        company="WTax (VATIT)"
-        companyLink="https://wtax.co/"
-        jobTitle="Data Engineer"
-        startDate="Aug 2022"
-        endDate="Jun 2023"
+        // company="WTax (VATIT)"
+        jobTitle="Product Owner (Finance, Claims, Leads, Bots)"
+        startDate="Aug 2023"
+        endDate="Present"
         responsibilities={[
-          "Bulk data pre-processing",
-          "Process automation using low-code platforms",
+          "Similar responsibilities as above with a much larger scope of projects",
+          "Bigger focus on system design and project management",
         ]}
       />
-
       <ExperieceItem
         // company="WTax (VATIT)"
         jobTitle="Product Owner (Finance)"
@@ -29,13 +28,14 @@ export default function Experience() {
       />
 
       <ExperieceItem
-        // company="WTax (VATIT)"
-        jobTitle="Product Owner (Finance, Claims, Leads, Bots)"
-        startDate="Aug 2023"
-        endDate="Present"
+        company="WTax (VATIT)"
+        companyLink="https://wtax.co/"
+        jobTitle="Data Engineer"
+        startDate="Aug 2022"
+        endDate="Jun 2023"
         responsibilities={[
-          "Similar responsibilities as above with a much larger scope of projects",
-          "Bigger focus on system design and project management",
+          "Bulk data pre-processing",
+          "Process automation using low-code platforms",
         ]}
       />
     </div>
