@@ -8,7 +8,7 @@ export default function Projects() {
         title="Unilifts"
         description="A web platform for students to host, find and share rides."
         techStack={["React", "Node.js", "Supabase", "TailwindCSS"]}
-        titleRef="https://unilifts.co.za/Welcome"
+        titleRef="https://unilifts.co.za/"
       />
 
       <ProjectCard
