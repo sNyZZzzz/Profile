@@ -1,14 +1,23 @@
+import { cn } from "@/lib/utils";
 import SectionHeader from "./SectionHeader";
+import Link from "next/link";
 
-export default function Projects() {
+type ProjectsProps = {
+  fullList?: boolean;
+};
+
+export default function ProjectsList({ fullList = false }: ProjectsProps) {
   return (
     <div className="-mt-2">
-      <SectionHeader heading="Projects" />
+      {fullList || (
+        <SectionHeader heading="Projects" redirectLink="/projects" />
+      )}
       <ProjectCard
         title="Unilifts"
         description="A web platform for students to host, find and share rides."
-        techStack={["React", "Node.js", "Supabase", "TailwindCSS"]}
-        titleRef="https://unilifts.co.za/"
+        techStack={["React", "Next.js", "Supabase", "TailwindCSS"]}
+        titleRef="/projects/unilifts"
+        showItem={true || fullList}
       />
 
       <ProjectCard
@@ -16,12 +25,14 @@ export default function Projects() {
         description="Investigation of CNN architecture for translation invariance."
         techStack={["Python", "PyTorch"]}
         titleRef="https://arxiv.org/abs/2104.05997"
+        showItem={true || fullList}
       />
 
       <ProjectCard
         title="Fee Engine"
         description="Novel system for managing complex client fees."
         techStack={["Jira", "Agile Sprint", "DrawIO"]}
+        showItem={true || fullList}
       />
     </div>
   );
@@ -32,6 +43,8 @@ type ProjectCardProps = {
   description: string;
   techStack?: string[];
   titleRef?: string;
+  showItem: boolean;
+  className?: string;
 };
 
 export function ProjectCard({
@@ -39,9 +52,17 @@ export function ProjectCard({
   description,
   techStack,
   titleRef,
+  showItem,
+  className,
 }: ProjectCardProps) {
   return (
-    <a className="flex flex-col gap-1 pb-5" href={titleRef} target="_blank">
+    <Link
+      className={cn(
+        `hidden  ${showItem && "flex flex-col gap-1 pb-5"}`,
+        className
+      )}
+      href={titleRef || "/'"}
+    >
       <span className="text-lg font-bold -mb-2">{title}</span>
       <span>{description}</span>
       <div className="flex flex-wrap gap-2 ">
@@ -55,6 +76,6 @@ export function ProjectCard({
             </div>
           ))}
       </div>
-    </a>
+    </Link>
   );
 }

@@ -12,7 +12,7 @@ export default function SectionHeading({ heading, date }: SectionHeadingProps) {
         {heading}
       </div>
       {date && (
-        <div className="text-xs text-muted opacity-80">
+        <div className="text-xs text-muted opacity-80 font-medium">
           <DateTag date={date} />
         </div>
       )}
