@@ -19,27 +19,10 @@ export const metadata: Metadata = {
   description: "Noteworthy projects I've worked on or built",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex items-center justify-center`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="flex items-center bg-background w-full  max-w-3xl bg-green-200 ">
-            <div className="w-full">{children}</div>
-          </div>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+  return <div className=" w-full   flex items-center">{children}</div>;
 }
