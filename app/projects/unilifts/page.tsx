@@ -28,6 +28,38 @@ export default function Page() {
           </p>
         </div>
         <SectionHeader heading="Rides" />
+        <div className="mb-6 text-pretty">
+          <p>
+            When hosting a ride, students can set the origin, destination,
+            price, depart time and available seats. Once a ride has been
+            created, the host can easily share their ride on various platforms.
+          </p>
+          <br></br>
+          <p>
+            Students looking to join a ride can search for upcomming rides with
+            available seats . Unilfts doesn&apos;t just search for rides
+            matching their exact origin and destination, but also shows them
+            other neary rides that could potentially help them get to where they
+            need to go.
+          </p>
+          <br></br>
+          <p>
+            Ride hosts have full control over who they allow to join their
+            rides. Once a student has found a ride that they would like to join,
+            they send a &quot;join request&quot; to the host of that ride. The
+            host can check the student&apos;s profile to see their ratings and
+            reviews, and then decide whether to accept or decline the
+            student&apos;s request to join their ride.
+          </p>
+          <br></br>
+          <p>
+            Only after the host has accepted a student&apos;s request to join
+            their ride do they both gain access to the other&apos;s phone number
+            via WhatsApp. This direct communication is still required to
+            finalise details such as exact pickup and dropoff points, luggage
+            policy and any possible delays.
+          </p>
+        </div>
         <SectionHeader heading="User Reviews" />
         <SectionHeader heading="Notifications" />
         <SectionHeader heading="Tech Stack" />
