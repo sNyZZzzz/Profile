@@ -61,6 +61,9 @@ export default function Page() {
           </p>
         </div>
         <SectionHeader heading="User Reviews" />
+        <div className="mb-6 text-pretty">
+          <p>Unilifts doesn't just </p>
+        </div>
         <SectionHeader heading="Notifications" />
         <SectionHeader heading="Tech Stack" />
       </div>
