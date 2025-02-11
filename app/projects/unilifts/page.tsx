@@ -22,9 +22,9 @@ export default function Page() {
           </p>
           <br></br>
           <p>
-            The platform allows students to host rides that other students can
-            request to join, at their set price. Ride hosts have full control
-            over who is permitted to join their rides.
+            The platform also allows students to host rides that other students
+            can request to join, at their set price. Ride hosts have full
+            control over who is permitted to join their rides.
           </p>
         </div>
         <SectionHeader heading="Rides" />
@@ -62,7 +62,20 @@ export default function Page() {
         </div>
         <SectionHeader heading="User Reviews" />
         <div className="mb-6 text-pretty">
-          <p>Unilifts doesn't just </p>
+          <p>
+            Unilifts doesn&apos;t just facilitate the finding and hosting of
+            rides, it also allows students to review each other. Students who
+            are part of a ride are able to leave a review for every other member
+            of the ride. These reviews are then displayed on each student&apos;s
+            profile.
+          </p>
+          <br></br>
+          <p>
+            When a student then hosts or requests to join a ride, other students
+            can see the existing reviews on that student&apos;s profile. These
+            reviews can then influence their decision to join or accept this
+            student into their ride.
+          </p>
         </div>
         <SectionHeader heading="Notifications" />
         <SectionHeader heading="Tech Stack" />

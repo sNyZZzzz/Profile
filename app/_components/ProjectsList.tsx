@@ -61,7 +61,7 @@ export function ProjectCard({
         `hidden  ${showItem && "flex flex-col gap-1 pb-5"}`,
         className
       )}
-      href={titleRef || "/'"}
+      href={titleRef || "/"}
     >
       <span className="text-lg font-bold -mb-2">{title}</span>
       <span>{description}</span>

@@ -8,6 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function BreadCrumber() {
@@ -20,7 +21,9 @@ export default function BreadCrumber() {
       <Breadcrumb className="m-4">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            <BreadcrumbLink asChild>
+              <Link href="/">Home</Link>
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadCrumbSection pathnameArr={pathnameArr} />
         </BreadcrumbList>
@@ -38,12 +41,15 @@ export function BreadCrumbSection({ pathnameArr }: BreadCrumbSectionProps) {
 
   const breadCrumbLinks = pathnameArr?.map((segment) => {
     url += `/${segment}`;
+    console.log(url);
     return (
       <>
         <BreadcrumbSeparator />
         <BreadcrumbItem>
-          <BreadcrumbLink href={url}>
-            {segment?.charAt(0)?.toUpperCase() + segment?.slice(1)}
+          <BreadcrumbLink asChild>
+            <Link href={url}>
+              {segment?.charAt(0)?.toUpperCase() + segment?.slice(1)}
+            </Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
       </>
