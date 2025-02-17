@@ -8,10 +8,10 @@ export default function ContactInfo() {
       <ul className="flex flex-col gap-2 md:gap-3 md:mt-3">
         <a
           className="flex gap-2 items-center"
-          href="mailto: christiaanmyburgh@gmail.com"
+          href="mailto: christiaanmyburgh01@gmail.com"
         >
           <Mail className="md:h-5 md:w-5 h-4 w-4 " />{" "}
-          <span>christiaanmyburgh@gmail.com</span>
+          <span>christiaanmyburgh01@gmail.com</span>
         </a>
         <a className="flex gap-2 items-center" href="tel:+27720228765">
           <Smartphone className="md:h-5 md:w-5 h-4 w-4 " />{" "}
