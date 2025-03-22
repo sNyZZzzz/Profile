@@ -7,7 +7,7 @@ export default function Page() {
     <div className="w-full max-w-3xl ">
       <SectionHeading
         heading="Unilifts"
-        date="2024/02/01"
+        date="2025/02/01"
         externalLink="https://www.unilifts.co.za"
       />
       <BreadCrumber />
@@ -46,7 +46,7 @@ export default function Page() {
           <p>
             Ride hosts have full control over who they allow to join their
             rides. Once a student has found a ride that they would like to join,
-            they send a &#34; join request &#34; to the host of that ride. The
+            they send a &#34;join request&#34; to the host of that ride. The
             host can check the student&apos;s profile to see their ratings and
             reviews, and then decide whether to accept or decline the
             student&apos;s request to join their ride.
