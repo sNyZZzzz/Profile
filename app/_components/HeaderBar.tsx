@@ -10,8 +10,6 @@ export default function HeaderBar() {
           <Image
             src={profilePicture}
             fill
-            layout="fill"
-            objectFit="cover"
             alt="profile picture"
             className="rounded-full "
           />

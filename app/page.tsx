@@ -1,11 +1,11 @@
 import { ModeToggle } from "@/components/theme-switch";
-import HeaderBar from "./_components/HeaderBar";
-import ContactInfo from "./_components/ContactInfo";
 import AboutMe from "./_components/AboutMe";
-import Experience from "./_components/Experience";
+import ContactInfo from "./_components/ContactInfo";
 import Education from "./_components/Education";
-import Projects from "./_components/Projects";
+import Experience from "./_components/Experience";
+import HeaderBar from "./_components/HeaderBar";
 import PrintButton from "./_components/PrintButton";
+import ProjectsList from "./_components/ProjectsList";
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col md:col-span-3 mt-6 md:mt-0 print:md:mt-5 gap-6">
           <Experience />
-          <Projects />
+          <ProjectsList />
         </div>
       </div>
     </div>
